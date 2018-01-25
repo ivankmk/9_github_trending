@@ -5,7 +5,7 @@ This script revert to you TOP-20 github repositories created within last week;
 # Requirements
 
  - Python 3.5
- - Packages: requests
+ - Packages: requests==2.11.1
 
  # How to launch
 
