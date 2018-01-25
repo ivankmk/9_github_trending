@@ -43,40 +43,40 @@ This script revert to you TOP-20 github repositories created within last week;
  9. Repo name: DeepLeague
           Opened issues: 7
           Link: https://github.com/farzaa/DeepLeague
-          10. Repo name: gg-flip
-                   Opened issues: 7
-                   Link: https://github.com/avinassh/gg-flip
-          11. Repo name: state-machine-component
-                   Opened issues: 2
-                   Link: https://github.com/developit/state-machine-component
-          12. Repo name: hypercast
-                   Opened issues: 1
-                   Link: https://github.com/louiscenter/hypercast
-          13. Repo name: hortor_cheater
-                   Opened issues: 1
-                   Link: https://github.com/chxj1992/hortor_cheater
-          14. Repo name: react-native-ticker
-                   Opened issues: 0
-                   Link: https://github.com/browniefed/react-native-ticker
-          15. Repo name: electron-timber
-                   Opened issues: 1
-                   Link: https://github.com/sindresorhus/electron-timber
-          16. Repo name: laravel-preset
-                   Opened issues: 0
-                   Link: https://github.com/adamwathan/laravel-preset
-          17. Repo name: quicli
-                   Opened issues: 15
-                   Link: https://github.com/killercup/quicli
-                   18. Repo name: monitor_ctrl
-                            Opened issues: 0
-                            Link: https://github.com/dot-osk/monitor_ctrl
-                   19. Repo name: LearningToCompare-Pytorch
-                            Opened issues: 0
-                            Link: https://github.com/dragen1860/LearningToCompare-Pytorch
-                   20. Repo name: PHPerInterviewGuide
-                            Opened issues: 0
-                            Link: https://github.com/todayqq/PHPerInterviewGuide
-                   -----------------------------------------------------------                   
+10. Repo name: gg-flip
+         Opened issues: 7
+         Link: https://github.com/avinassh/gg-flip
+11. Repo name: state-machine-component
+         Opened issues: 2
+         Link: https://github.com/developit/state-machine-component
+12. Repo name: hypercast
+         Opened issues: 1
+         Link: https://github.com/louiscenter/hypercast
+13. Repo name: hortor_cheater
+         Opened issues: 1
+         Link: https://github.com/chxj1992/hortor_cheater
+14. Repo name: react-native-ticker
+         Opened issues: 0
+         Link: https://github.com/browniefed/react-native-ticker
+15. Repo name: electron-timber
+         Opened issues: 1
+         Link: https://github.com/sindresorhus/electron-timber
+16. Repo name: laravel-preset
+         Opened issues: 0
+         Link: https://github.com/adamwathan/laravel-preset
+17. Repo name: quicli
+         Opened issues: 15
+         Link: https://github.com/killercup/quicli
+ 18. Repo name: monitor_ctrl
+          Opened issues: 0
+          Link: https://github.com/dot-osk/monitor_ctrl
+ 19. Repo name: LearningToCompare-Pytorch
+          Opened issues: 0
+          Link: https://github.com/dragen1860/LearningToCompare-Pytorch
+ 20. Repo name: PHPerInterviewGuide
+          Opened issues: 0
+          Link: https://github.com/todayqq/PHPerInterviewGuide
+ -----------------------------------------------------------                   
  ```
 
  The same with Windows environment;
