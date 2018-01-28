@@ -9,14 +9,16 @@ def get_week_ago_date():
     return one_week_age
 
 
-def get_trending_repositories(top_popular):
+def get_trending_repositories(top_popular, week_ago):
 
-    payload = {'q': 'created:>{}'.format(week_ago),
-               'sort': 'stars',
-               'order': 'desc'}
-    all_repos = requests.get('https://api.github.com/search/repositories',
-                             params=payload)
-    return all_repos.json()['items'][:top_popular]
+    payload = {
+            'q': 'created:>{}'.format(week_ago),
+            'sort': 'stars',
+            'order': 'desc'
+            }
+    respond_oject = requests.get('https://api.github.com/search/repositories',
+                                 params=payload)
+    return respond_oject.json()['items'][:top_popular]
 
 
 def get_issues(owner, repo):
@@ -32,17 +34,17 @@ def print_top_repositories(all_repos):
           format(week_ago))
     for rank, repo in enumerate(all_repos, 1):
         print('{}. Repo name: {}'.format(rank, repo['name']))
-        print('         Opened issues: {}'.
+        print('\tOpened issues: {}'.
               format(get_issues(str(repo['owner']['login']), str(repo['name'])
                                 )
                      )
               )
-        print('         Link: {}'.format(repo['html_url']))
+        print('\tLink: {}'.format(repo['html_url']))
     print(delimiter)
 
 
 if __name__ == '__main__':
     top_repo = 20
     week_ago = get_week_ago_date()
-    trending_repos = get_trending_repositories(top_repo)
+    trending_repos = get_trending_repositories(top_repo, week_ago)
     print_top_repositories(trending_repos)
