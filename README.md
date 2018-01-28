@@ -1,4 +1,4 @@
-# Github Trends
+# Night Owls Detector
 
 This script revert to you TOP-20 github repositories created within last week;
 

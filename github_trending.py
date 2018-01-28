@@ -1,6 +1,5 @@
 import requests
 import json
-import collections
 from datetime import timedelta, date
 
 
@@ -12,18 +11,22 @@ def get_week_ago_date():
 def get_trending_repositories(top_popular, week_ago):
 
     payload = {
-            'q': 'created:>{}'.format(week_ago),
-            'sort': 'stars',
-            'order': 'desc'
+    'q': 'created:>{}'.format(week_ago),
+    'sort': 'stars',
+    'order': 'desc'
             }
-    respond_oject = requests.get('https://api.github.com/search/repositories',
-                                 params=payload)
-    return respond_oject.json()['items'][:top_popular]
+    response = requests.get(
+            'https://api.github.com/search/repositories',
+            params=payload
+            )
+    return response.json()['items'][:top_popular]
 
 
 def get_issues(owner, repo):
-    issues = requests.get('https://api.github.com/repos/{}/{}/issues'.
-                          format(owner, repo))
+    issues = requests.get(
+            'https://api.github.com/repos/{}/{}/issues'.
+            format(owner, repo)
+            )
     return len(issues.json())
 
 
