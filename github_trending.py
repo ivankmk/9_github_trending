@@ -11,9 +11,9 @@ def get_week_ago_date():
 def get_trending_repositories(top_popular, week_ago):
 
     payload = {
-    'q': 'created:>{}'.format(week_ago),
-    'sort': 'stars',
-    'order': 'desc'
+        'q': 'created:>{}'.format(week_ago),
+        'sort': 'stars',
+        'order': 'desc'
             }
     response = requests.get(
             'https://api.github.com/search/repositories',
