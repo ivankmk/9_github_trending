@@ -14,11 +14,11 @@ def get_trending_repositories(top_popular, week_ago):
         'q': 'created:>{}'.format(week_ago),
         'sort': 'stars',
         'order': 'desc'
-            }
+        }
     response = requests.get(
-            'https://api.github.com/search/repositories',
-            params=payload
-            )
+        'https://api.github.com/search/repositories',
+        params=payload
+        )
     return response.json()['items'][:top_popular]
 
 
@@ -37,11 +37,9 @@ def print_top_repositories(all_repos):
           format(week_ago))
     for rank, repo in enumerate(all_repos, 1):
         print('{}. Repo name: {}'.format(rank, repo['name']))
-        print('\tOpened issues: {}'.
-              format(get_issues(str(repo['owner']['login']), str(repo['name'])
-                                )
-                     )
-              )
+        print('\tOpened issues: {}'.format(
+                get_issues(str(repo['owner']['login']), str(repo['name']))
+                ))
         print('\tLink: {}'.format(repo['html_url']))
     print(delimiter)
 
