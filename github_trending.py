@@ -40,7 +40,7 @@ if __name__ == '__main__':
     for rank, repo in enumerate(trending_repos, 1):
         print('{}. Repo name: {}'.format(rank, repo['name']))
         print('\tOpened issues: {}'.format(
-            get_issues(str(repo['owner']['login']), str(repo['name']))
+            get_issues(repo['owner']['login'], repo['name'])
         ))
         print('\tLink: {}'.format(repo['html_url']))
     print(delimiter)
